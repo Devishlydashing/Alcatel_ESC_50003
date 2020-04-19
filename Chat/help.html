@@ -1,0 +1,79 @@
+<!DOCTYPE>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="help.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.dev.js"></script>
+    <title>Help Page</title>
+</head>
+
+<body>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="mx-auto" style="width: 200px;">
+          <h1>Help Page</h1>
+          <div class="text-justify">
+            <p>Hi there, please state your <strong>Issue</strong> and preferred <strong>Means of Communication</strong>
+              before clicking the <strong>Next</strong> button.</p>
+          </div>
+
+    <!--Issue-->
+          <div class="text-justify" id = "text">
+            <label><p><strong>Issue:</strong></p></label><br>
+            <input type = "radio"
+                   name = "Issue"
+                   id = "general"
+                   value = "General"
+                   checked = "checked"/>
+            <label for = "General">General</label><br>
+            <input type = "radio"
+                   name = "Issue"
+                   id = "password"
+                   value = "Password"/>
+            <label for = "password">Password</label><br>
+            <input type = "radio"
+                   name = "Issue"
+                   id = "others"
+                   value = "Others"/>
+            <label for = "Others">Others</label><br>
+          </div>
+
+    <!--Means of Communication-->
+          <div class="text-left">
+            <label><p><strong>Means of Communication:</strong></p></label>
+
+            <input type = "radio"
+                   name = "MoC"
+                   id = "Chat"
+                   value = "Chat"
+                   checked = "checked"/>
+<!--                   onclick="checkFunc1()"/>-->
+            <label for = "Chat">Chat</label><br>
+            <input type = "radio"
+                   name = "MoC"
+                   id = "Call"
+                   value = "Call"/>
+<!--                   onclick="checkFunc1()"/>-->
+            <label for = "Call">Call</label><br>
+          </div>
+
+    <!--Next Button-->
+<!--          <a href="chat.html">-->
+          <button type="button"
+                  id="Next"
+                  onclick="checkFunc()"
+                  class="btn btn-primary btn-lg btn-block">Next</button>
+<!--          </a>-->
+
+    <!--About the Team-->
+          <div class="mt-5">
+            <h10><small>SUTD ISTD Class of 2021 Cohort 3 Group 5.</small></h10>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>

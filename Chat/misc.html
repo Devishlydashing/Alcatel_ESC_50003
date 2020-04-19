@@ -1,0 +1,175 @@
+<!--Chat-->
+      
+                <div class="chat admin">
+                  <div class="user-photo"><img src="4.png"></div>
+                    <p class="chat-message">HelloWorld</p>
+                </div>
+      
+                <div class="chat user">
+                  <div class="user-photo"><img src="1.png"></div>
+                    <p class="chat-message">HelloWorld</p>
+                </div>
+
+                <div class="chat admin">
+                  <div class="user-photo"><img src="4.png"></div>
+                    <p class="chat-message">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+
+                <div class="chat user">
+                  <div class="user-photo"><img src="1.png"></div>
+                    <p class="chat-message">HelloWorld</p>
+                </div>
+
+                <div class="chat admin">
+                  <div class="user-photo"><img src="4.png"></div>
+                    <p class="chat-message">HelloWorld</p>
+                </div>
+      
+                <div class="chat user">
+                  <div class="user-photo"><img src="1.png"></div>
+                    <p class="chat-message">HelloWorld</p>
+                </div>
+
+                <div class="chat admin">
+                  <div class="user-photo"><img src="4.png"></div>
+                    <p class="chat-message">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+
+                <div class="chat user">
+                  <div class="user-photo"><img src="1.png"></div>
+                    <p class="chat-message">HelloWorld</p>
+                </div>
+
+                <div class="chat admin">
+                  <div class="user-photo"><img src="4.png"></div>
+                    <p class="chat-message">HelloWorld</p>
+                </div>
+      
+                <div class="chat user">
+                  <div class="user-photo"><img src="1.png"></div>
+                    <p class="chat-message">TEST</p>
+                </div>
+
+                
+                <!---->
+__________________________________
+
+
+function sendFunc(){
+  /**
+  text = document.getElementById("sendBox").value; // get text
+  // add user text to chat logs.
+  
+  var add = [
+    '<div class="chat user">',
+      '<div class="user-photo"><img src="1.png"></div>',
+        '<p class="chat-message">' + text + '</p>',
+    '</div>'].join("\n");
+
+  $("body").append(add);
+  */
+
+  alert(sendBox.id)
+
+}
+
+
+const chat = [
+{
+  class: "admin",
+  image: "4.png"
+  message: "test admin"
+},
+{
+  class: "user",
+  image: "1.png",
+  message: "test user"
+}
+]
+
+const petsData = [
+  {
+    name: "Purrsloud",
+    species: "Cat",
+    favFoods: ["wet food", "dry food", "<strong>any</strong> food"],
+    birthYear: 2016,
+    photo: "https://learnwebcode.github.io/json-example/images/cat-2.jpg"
+  },
+  {
+    name: "Barksalot",
+    species: "Dog",
+    birthYear: 2008,
+    photo: "https://learnwebcode.github.io/json-example/images/dog-1.jpg"
+  },
+  {
+    name: "Meowsalot",
+    species: "Cat",
+    favFoods: ["tuna", "catnip", "celery"],
+    birthYear: 2012,
+    photo: "https://learnwebcode.github.io/json-example/images/cat-1.jpg"
+  }
+];
+
+function age(birthYear) {
+  let calculatedAge = new Date().getFullYear() - birthYear;
+  if (calculatedAge == 1) {
+    return "1 year old";
+  } else if (calculatedAge == 0) {
+    return "Baby";
+  } else {
+    return `${calculatedAge} years old`;
+  }
+}
+
+function foods(foods) {
+  return `
+<h4>Favorite Foods</h4>
+<ul class="foods-list">
+${foods.map(food => `<li>${food}</li>`).join("")}
+</ul>
+`;
+}
+
+function petTemplate(pet) {
+  return `
+    <div class="animal">
+    <img class="pet-photo" src="${pet.photo}">
+    <h2 class="pet-name">${pet.name} <span class="species">(${pet.species})</span></h2>
+    <p><strong>Age:</strong> ${age(pet.birthYear)}</p>
+    ${pet.favFoods ? foods(pet.favFoods) : ""}
+    </div>
+  `;
+}
+
+function chatTemplate(chat) {
+  return `
+    <div class="${chat.class}">
+                  <div class="user-photo"><img src=${chat.image}></div>
+                    <p class="chat-message">${chat.message}</p>
+                </div>
+                `;
+}
+document.getElementById("chatlogs").innerHTML = `
+  ${chat.map(chatTemplate).join("")}`
+
+document.getElementById("app").innerHTML = `
+  <h1 class="app-title">Pets (${petsData.length} results)</h1>
+  ${petsData.map(petTemplate).join("")}
+  <p class="footer">These ${petsData.length} pets were added recently. Check back soon for updates.</p>
+`;
+
+
+_______________________
+
+<div class="custom-control custom-radio">
+    <input type="radio" class="custom-control-input" id="Issue3" name="Issue" onclick="checkFunc()">
+    <label class="custom-control-label" for="Issue3">Issue 3</label>
+</div>
+<div class="custom-control custom-radio">
+    <input type="radio" class="custom-control-input" id="Issue4" name="Issue" onclick="checkFunc()">
+    <label class="custom-control-label" for="Issue4">Issue 4</label>
+</div>
+<div class="custom-control custom-radio">
+    <input type="radio" class="custom-control-input" id="Issue5" name="Issue" onclick="checkFunc()">
+    <label class="custom-control-label" for="Issue5">Issue 5</label>
+</div>

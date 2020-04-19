@@ -1,0 +1,18 @@
+
+h3 {
+	color: rgb(0,0,128);
+}
+
+.italic {
+	font-style:italic;
+}
+
+#bold {
+	font-weight:bold;
+}
+.custom-control-label{
+z-height:0;
+}
+#Issue3{
+z-height:1;
+}

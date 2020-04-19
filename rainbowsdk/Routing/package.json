@@ -1,0 +1,12 @@
+{
+  "name": "ESC_50.003",
+  "version": "1.0.0",
+  "dependencies": {
+    "async-mutex": "^0.1.4",
+    "express": "^4.17.1",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "firebase-admin": "^8.10.0"
+  }
+}
