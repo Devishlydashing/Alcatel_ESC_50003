@@ -38,16 +38,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Test4_2">
-    <configuration name="Test4_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test4_1" />
+  <component name="RunManager" selected="Application.Test6">
+    <configuration name="Test4_3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test4_3" />
       <module name="SeleniumTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test4_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test4_2" />
+    <configuration name="Test4_4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test4_4" />
+      <module name="SeleniumTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test4_5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test4_5" />
       <module name="SeleniumTest" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -55,13 +62,6 @@
     </configuration>
     <configuration name="Test6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Test6" />
-      <module name="SeleniumTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test7" />
       <module name="SeleniumTest" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -76,11 +76,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Test4_2" />
-        <item itemvalue="Application.Test4_1" />
         <item itemvalue="Application.Test6" />
-        <item itemvalue="Application.Test7" />
+        <item itemvalue="Application.Test4_5" />
         <item itemvalue="Application.Test8" />
+        <item itemvalue="Application.Test4_3" />
+        <item itemvalue="Application.Test4_4" />
       </list>
     </recent_temporary>
   </component>

@@ -76,7 +76,7 @@ public class Test5_1 {
         Thread.sleep(2000);
         Alert alert = driver.switchTo().alert();
         alert.accept(); // for OK
-        Thread.sleep(8000);
+        Thread.sleep(3000);
         // Close the browser
         driver.close();
 
