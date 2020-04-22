@@ -66,7 +66,7 @@ npm install --save rainbow-node-sdk
 
 Include tests 
 ```
-nothing yet
+Selenium test cases
 ```
 
 ### Built with
